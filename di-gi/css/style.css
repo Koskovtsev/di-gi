@@ -1,10 +1,11 @@
 :root {
     --text-coolor-white: #ffffff;
     --text-color-dark: #4A4A4A;
+    --text-color-button-dark: #9b9b9b;
     --background-color-dark: #2B4074;
     --background-color-white: #FFFFFF;
     --background-button-color: #F9F6E5;
-    --text-font-family-main: 'Roboto Condensed', sans-serif;
+    --text-font-family-main-condensed: 'Roboto Condensed', sans-serif;
     --text-font-family-other: 'Roboto', sans-serif;
 }
 
@@ -44,7 +45,7 @@ button {
 
 .intro {
     color: var(--text-coolor-white);
-    font-family: var(--text-font-family-main);
+    font-family: var(--text-font-family-main-condensed);
     font-weight: 400;
     font-size: 24px;
     line-height: 26px;
@@ -61,7 +62,7 @@ button {
 }
 
 .intro_text {
-    font-family: var(--text-font-family-main);
+    font-family: var(--text-font-family-main-condensed);
     font-size: 24px;
     font-weight: 400;
 }
@@ -74,7 +75,7 @@ main_title {
 .title {
     display: flex;
     justify-content: center;
-    font-family: var(--text-font-family-main);
+    font-family: var(--text-font-family-main-condensed);
     font-weight: 400;
     font-size: 96px;
     line-height: 96px;
@@ -215,7 +216,6 @@ main_title {
     flex-direction: column;
     justify-content: space-between;
     padding: 2.7%;
-    margin-top: 2%;
     max-width: 30%;
 }
 
@@ -225,7 +225,7 @@ main_title {
 }
 
 .services_text_head {
-    font-family: var(--text-font-family-main);
+    font-family: var(--text-font-family-main-condensed);
     font-size: 48px;
     color: var(--background-color-dark);
     font-weight: 400;
@@ -270,29 +270,81 @@ main_title {
 .serv_item_btn {
     display: flex;
     align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     background-color: var(--background-color-white);
     margin: 1px;
     min-width: 222px;
     min-height: 255px;
+    position: relative;
+}
+
+.item_hover_content {
+    position: absolute;
+    bottom: 30px;
+    /* Позиція тексту знизу */
+    left: 0;
+    right: 0;
+    padding: 0 20px;
+    opacity: 0;
+    /* Спочатку невидимий */
+    transform: translateY(10px);
+    /* Трохи опущений для ефекту випливання */
+    transition: transform 0.8s ease;
+    pointer-events: none;
+    /* Щоб текст не заважав кліку по кнопці */
+}
+
+.serv_item_btn:hover .item_hover_content {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    transform: translateY(0);
+}
+
+/* При наведенні піднімаємо іконку та заголовок */
+.serv_item_btn:hover .service_image,
+.serv_item_btn:hover .item_name {
+
+    transform: translateY(-40px);
+    /* Величина підйому */
+    transition: all 0.5s ease;
 }
 
 .serv_item_btn:hover {
-    outline: 3px solid var(--background-color-dark);
-    outline-offset: -3px;
+    outline: 4px solid var(--background-color-dark);
+    outline-offset: -9px;
 }
 
 .service_image {
-    mask-image: url("../images/services/item1.png");
-    -webkit-mask-image: url("../images/services/item1.png");
-    /* Це дозволить міняти картинки в HTML */
-   /* mask-image: var(--image-url);*/
+    margin-top: 20%;
+    filter: brightness(0) saturate(100%) invert(21%) sepia(35%) saturate(1661%) hue-rotate(198deg) brightness(96%) contrast(92%);
+    transition: filter 0.3s ease;
+}
 
-    -webkit-mask-size: contain;
-    mask-size: contain;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
+.hover_text {
+    font-family: var(--text-font-family-other);
+    font-size: 16px;
+    color: var(--text-color-button-dark);
+    margin-top: 5%;
+    margin-bottom: 7%;
+    font-weight: 500;
+}
 
-    /* КОЛІР: тепер ви можете задати будь-який колір для всіх іконок одразу */
-    background-color: var(--background-color-dark);
+.more_link {
+    font-family: var(--text-font-family-main-condensed);
+    color: var(--background-color-dark);
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-top: 100px;
+    text-transform: uppercase;
+}
+
+.item_name {
+    margin-bottom: 20%;
+    font-family: var(--text-font-family-main-condensed);
+    color: var(--text-color-dark);
+    max-width: 150px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
