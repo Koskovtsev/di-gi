@@ -1,10 +1,78 @@
 .recent_work {
     display: flex;
     flex-direction: column;
-    background-color: var(--background-button-color);
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--background-color-dark) 0%, #ffffff 100%);
 }
-.title h1{
+.recent_work_title {
+    padding: 40px;
+}
+.recent_work_title h1{
     font-family: var(--text-font-family-main-condensed);
     font-size: 48px;
     font-weight: 400;
+    padding-bottom: 40px;
+    color: var(--text-color-white);
+    position: relative;
+}
+
+.recent_work_title h1::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 8px;
+    width: 100px;
+    background-color: var(--background-color-white);
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.portfolio_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+.portfolio_image {
+    border-radius: 3%;
+}
+
+.portfolio_image_btn {
+    position: relative;
+}
+
+.portfolio_image_btn:hover .hover_info{
+    opacity: 0.835;
+    transition: all 0.3s ease;
+}
+
+.hover_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    position: absolute;
+    background-color: var(--background-button-color);
+    border-radius: 3px;
+    inset: 12px;
+}
+.hover_info img {
+    margin: 7px;
+    cursor: pointer;
+}
+
+.content_name {
+    font-family: var(--text-font-family-main-condensed);
+    color: var(--text-color-dark-blue);
+    font-weight: 700;
+    font-size: 16px;
+    margin: 38px;
+    letter-spacing: 2px;
 }

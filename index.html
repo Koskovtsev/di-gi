@@ -21,16 +21,18 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
-  
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/recent-work.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/intro.css">
 </head>
 
 <body class="main">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
-  <section class="header">
+  <section id="header" class="header">
     <img src="images/logo.png" alt="Digital Agency logo" class="header__logo">
     <button class="menu_button"><i class="fa-solid fa-bars"></i></button>
   </section>
@@ -138,7 +140,7 @@
           <span class="more_link">детальніше &rarr;</span>
         </div>
       </button>
-      <button class="serv_item_btn">
+      <button class="serv_item_btn" onclick="location.href='#header'">
         <img src="images/services/item8.png" alt="продукт" class="service_image">
         <h3 class="item_name">продукт</h3>
         <div class="item_hover_content">
@@ -149,10 +151,59 @@
     </div>
   </section>
   <section class="recent_work">
-    <div class="title">
+    <div class="recent_work_title">
       <h1>Наші Проєкти</h1>
     </div>
-    <div class="content"></div>
+    <div class="content">
+      <div class="portfolio_item">
+        <div class="portfolio_image_btn">
+          <img src="images/content/portfolio-1.png" alt="portfolio-1.png" class="portfolio_image">
+          <div class="hover_info">
+            <a href="#header">
+              <img src="images/content/info_button.svg" alt="info_button.svg" class="info_btn">
+              <img src="images/content/search_button.svg" alt="search_button.svg" class="search_btn">
+            </a>
+          </div>
+        </div>
+        <h2 class="content_name">Lalique бутик</h2>
+      </div>
+      <div class="portfolio_item">
+        <div class="portfolio_image_btn">
+          <img src="images/content/portfolio-2.png" alt="portfolio-2.png" class="portfolio_image">
+          <div class="hover_info">
+            <a href="#header">
+              <img src="images/content/info_button.svg" alt="info_button.svg" class="info_btn">
+              <img src="images/content/search_button.svg" alt="search_button.svg" class="search_btn">
+            </a>
+          </div>
+        </div>
+        <h2 class="content_name">Будівництво домів</h2>
+      </div>
+      <div class="portfolio_item">
+        <div class="portfolio_image_btn">
+          <img src="images/content/portfolio-3.png" alt="portfolio-3.png" class="portfolio_image">
+          <div class="hover_info">
+            <a href="#header">
+              <img src="images/content/info_button.svg" alt="info_button.svg" class="info_btn">
+              <img src="images/content/search_button.svg" alt="search_button.svg" class="search_btn">
+            </a>
+          </div>
+        </div>
+        <h2 class="content_name">Кавʼярня</h2>
+      </div>
+      <div class="portfolio_item">
+        <div class="portfolio_image_btn">
+          <img src="images/content/portfolio-4.png" alt="portfolio-4.png" class="portfolio_image">
+          <div class="hover_info">
+            <a href="#header">
+              <img src="images/content/info_button.svg" alt="info_button.svg" class="info_btn">
+              <img src="images/content/search_button.svg" alt="search_button.svg" class="search_btn">
+            </a>
+          </div>
+        </div>
+        <h2 class="content_name">Унікальні тури</h2>
+      </div>
+    </div>
   </section>
   <section class="video_block"></section>
   <section class="testimonial"></section>
