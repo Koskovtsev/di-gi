@@ -97,19 +97,23 @@
 }
 
 .pagination {
-    width: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 70px;
 }
 
 .indicator {
     border-radius: 50%;
     height: 10px;
     width: 10px;
-    background-color: var(--background-color-white);
     padding: 0;
-    border: 1px var(--background-color-white) solid;
 }
 
-.indicator.active {
+.intro .indicator {
+    background-color: var(--background-color-white);
+     border: 1px var(--background-color-white) solid;
+}
+.intro .indicator.active {
     background-color: transparent;
     cursor: default;
 }
