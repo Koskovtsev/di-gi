@@ -10,6 +10,7 @@
     --background-button-color: #F9F6E5;
     --text-font-family-main-condensed: 'Roboto Condensed', sans-serif;
     --text-font-family-other: 'Roboto', sans-serif;
+    --footer-border-color: #7EBF84;
 }
 
 html:focus-within {
