@@ -9,7 +9,8 @@
     vertical-align: bottom;
     position: relative;
     background-image: url('../images/bg-img.jpg');
-    min-height: 668px;
+    background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -138,20 +139,39 @@
 @media screen and (max-width: 1024px) {
     .title {
         font-size: 84px;
+        line-height: 84px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .title {
         font-size: 60px;
+        line-height: 60px;
     }
 }
 @media screen and (max-width: 640px) {
-    
+    .intro_text {
+        display: none;
+    }
+    .title {
+        position: relative;
+    }
+    .title::after {
+    content: "";
+    bottom: 0;
+    position: absolute;
+    left: 50%;
+    height: 8px;
+    width: 100px;
+    transform: translateX(-50%);
+    background-color: var(--background-color-dark);
+}
 }
 @media screen and (max-width: 320px) {
     .title {
         font-size: 28px;
+        letter-spacing: 0;
+        line-height: 28px;
     }
     .read_more_btn {
         display: none;
