@@ -90,9 +90,33 @@
     }
 }
 
+@media screen and (max-width: 768px) {
+    .content_name {
+        margin-bottom: 10px;
+        margin-top: 30px;
+    }
+
+    .content {
+        padding-bottom: 50px;
+    }
+}
+
 @media screen and (max-width: 640px) {
     .content {
         grid-template-rows: auto;
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .recent_work_title {
+        padding: 0;
+    }
+
+    .content_name {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio_item {
+        margin: 0;
     }
 }
