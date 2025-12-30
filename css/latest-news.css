@@ -118,6 +118,7 @@
 @media screen and (max-width: 1024px) {
     .news_content {
         columns: 3;
+        padding-bottom: 30px;
     }
     .latest_news {
         padding: 0;
