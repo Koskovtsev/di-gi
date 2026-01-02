@@ -20,6 +20,9 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -36,8 +39,6 @@
 
 <body>
   <div class="main">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="js/main.js"></script>
     <svg style="display: none;">
       <symbol id="icon_info" viewBox="0 0 28 28">
         <path fill-rule="evenodd" clip-rule="evenodd"
@@ -187,7 +188,7 @@
             <img src="images/content/portfolio-1.png" alt="portfolio-1.png" class="portfolio_image">
             <div class="hover_info">
               <a href="#">
-               <svg class="svg__info_btn">
+                <svg class="svg__info_btn">
                   <use href="#icon_info"></use>
                 </svg>
                 <svg class="svg__search_btn">
@@ -203,7 +204,7 @@
             <img src="images/content/portfolio-2.png" alt="portfolio-2.png" class="portfolio_image">
             <div class="hover_info">
               <a href="#">
-               <svg class="svg__info_btn">
+                <svg class="svg__info_btn">
                   <use href="#icon_info"></use>
                 </svg>
                 <svg class="svg__search_btn">
@@ -333,18 +334,44 @@
       </div>
     </section>
     <section id="testimonial" class="testimonial">
-      <figure class="quotes_carousel">
-        <div class="quote"><i class="fas fa-quote-right"></i></div>
-        <blockquote class="quote_text">Якщо треба створити<br class="br_mobile"> або підняти імідж компанії,<br
-            class="br-desktop">
-          то <span class="highlight">діджитал-маркетинг</span><br class="br_mobile"> є найбільш влучним</blockquote>
-        <figcaption class="cite_wrapper">- <cite class="cite">Маргарита Акулич</cite></figcaption>
-        <div class="pagination">
-          <button class="indicator"></button>
-          <button class="indicator active"></button>
-          <button class="indicator"></button>
-        </div>
-      </figure>
+      <div class="owl-carousel">
+        <figure class="quotes_carousel">
+          <div class="quote"><i class="fas fa-quote-right"></i></div>
+          <blockquote class="quote_text">Якщо треба створити<br class="br_mobile"> або підняти імідж компанії,<br
+              class="br-desktop">
+            то <span class="highlight">діджитал-маркетинг</span><br class="br_mobile"> є найбільш влучним</blockquote>
+          <figcaption class="cite_wrapper">- <cite class="cite">Маргарита Акулич</cite></figcaption>
+          <div class="pagination">
+            <button class="indicator"></button>
+            <button class="indicator active"></button>
+            <button class="indicator"></button>
+          </div>
+        </figure>
+         <figure class="quotes_carousel">
+          <div class="quote"><i class="fas fa-quote-right"></i></div>
+          <blockquote class="quote_text">Яllplp2lp3lти<br class="br_mobile"> або підняти імідж компанії,<br
+              class="br-desktop">
+            то <span class="highlight">д123213</span><br class="br_mobile"> є найбільш влучним</blockquote>
+          <figcaption class="cite_wrapper">- <cite class="cite">Маргарита Акулич</cite></figcaption>
+          <div class="pagination">
+            <button class="indicator"></button>
+            <button class="indicator active"></button>
+            <button class="indicator"></button>
+          </div>
+        </figure>
+         <figure class="quotes_carousel">
+          <div class="quote"><i class="fas fa-quote-right"></i></div>
+          <blockquote class="quote_text">asd<br class="br_mobile"> або підняти імідж компанії,<br
+              class="br-desktop">
+            то <span class="highlight">дppppppp</span><br class="br_mobile"> є найбільш влучним</blockquote>
+          <figcaption class="cite_wrapper">- <cite class="cite">Маргарита Акулич</cite></figcaption>
+          <div class="pagination">
+            <button class="indicator"></button>
+            <button class="indicator active"></button>
+            <button class="indicator"></button>
+          </div>
+        </figure>
+      </div>
     </section>
     <footer id="footer">
       <button class="footer__logo_btn">
@@ -406,6 +433,9 @@
       </div>
     </footer>
   </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

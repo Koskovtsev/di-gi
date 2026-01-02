@@ -59,14 +59,14 @@
 }
 
 .hover_info {
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
+    inset: 12px;
     opacity: 0;
-    position: absolute;
     background-color: var(--background-button-color);
     border-radius: 3px;
-    inset: 12px;
 }
 
 .hover_info svg {
@@ -88,7 +88,6 @@
 
 @media screen and (max-width: 1024px) {
     .content {
-        grid-template-rows: auto;
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -106,7 +105,6 @@
 
 @media screen and (max-width: 640px) {
     .content {
-        grid-template-rows: auto;
         grid-template-columns: repeat(1, 1fr);
     }
 
