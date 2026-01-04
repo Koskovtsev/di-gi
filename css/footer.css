@@ -35,7 +35,6 @@
 .footer__socials,
 .footer__nav {
     display: flex;
-    flex-direction: row;
     width: 100%;
     justify-content: space-evenly;
     margin: 100px 0;
