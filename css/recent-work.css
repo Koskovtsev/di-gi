@@ -3,8 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0px;
-    padding-bottom: 30px;
+    padding: 30px 0;
     background: linear-gradient(to bottom, var(--background-color-dark) 0%, #ffffff 100%);
 }
 
@@ -111,6 +110,7 @@
 
     .recent_work_title {
         padding: 0;
+        padding-bottom: 40px;
     }
 
     .content_name {
